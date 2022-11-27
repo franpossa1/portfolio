@@ -25,7 +25,7 @@ export default function ExperienceCard({ }: Props) {
             <div className='px-0 md:px-10'>
 
                 <h4 className='text-4xl font-light'>Altromondo S.A</h4>
-                <p font-bold text-2xl mt-1>Full Stack Developer</p>
+                <p className='font-bold text-2xl mt-1'>Full Stack Developer</p>
 
                 <div className='flex space-x-2 my-2'>
                     {/*Stack of Tecnologies*/}
