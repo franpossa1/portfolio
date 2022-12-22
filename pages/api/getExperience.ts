@@ -5,8 +5,11 @@ import { Experience, PageInfo, Project, Skill, Social } from "../../typings";
 
 
 const query = groq`
-*[_type =="pageInfo"][0]
+
   
+*[_type =="experience"] {
+    ..., technologies []->
+  }
 `
 type Data = {
     experiences: Experience[]

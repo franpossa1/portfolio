@@ -1,10 +1,15 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import { json } from 'stream/consumers'
+import { Experience } from '../typings'
 import ExperienceCard from './ExperienceCard'
 
-type Props = {}
+type Props = {
+    experiences: Experience[]
+}
 
-export default function ProjectExperience({ }: Props) {
+export default function ProjectExperience({ experiences }: Props) {
+
     return (
         <motion.div
             initial={{
@@ -23,20 +28,11 @@ export default function ProjectExperience({ }: Props) {
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Experiencia Laboral</h3>
 
 
-            <div className=' w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 '>
+            <div  className=' w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin
+             scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 '>
 
-                {/*PrjectCard*/}
-                <ExperienceCard />
-                {/*PrjectCard*/}
-                <ExperienceCard />
-
-                {/*PrjectCard*/}
-                <ExperienceCard />
-
-                {/*PrjectCard*/}
-                <ExperienceCard />
-
-
+            {experiences.map((exp,i)=> <ExperienceCard key={i} experience={exp} />)}
+            
             </div>
 
 

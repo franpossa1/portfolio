@@ -29,6 +29,7 @@ export interface Technology extends SanityBody {
     _type: "social";
     title: string;
     url: string;
+    image:Image;
 
 }
 export interface Skill extends SanityBody {
@@ -59,7 +60,6 @@ export interface Experience extends SanityBody {
     isCurrentlyWOrkingHere: boolean;
     jobTitle: string;
     points: string[];
-
     technologies: Technology[];
 
 

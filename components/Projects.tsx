@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion';
 import React from 'react'
+import { Project } from '../typings';
 
-type Props = {}
+type Props = {
+    projects:Project[]
+}
 
-export default function Projects({ }: Props) {
+export default function Projects({projects }: Props) {
     const projectcount = [1, 2, 3, 4, 5];
     return (
         <motion.div
@@ -23,7 +26,7 @@ export default function Projects({ }: Props) {
             <div className='relative w-fyll flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 '>
                 {
                     projectcount.map((x, i) => {
-                        return (<div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
+                        return (<div key={i} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
 
                             <motion.img
                                 initial={{
