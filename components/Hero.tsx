@@ -22,7 +22,7 @@ export default function Hero({ pageInfo}: Props) {
             <BackgroundCircles />
 
             <img className='relative rounded-full h-32 w-32 mx-auto object-cover'
-                src={urlFor(pageInfo?.heroImage).url()}
+                src={urlFor(pageInfo?.profilePic).url()}
                 alt="" />
             <div className='z-20'>
                 <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[10px]'> Angular | React | .NET | NodeJS</h2>
@@ -31,7 +31,7 @@ export default function Hero({ pageInfo}: Props) {
 
                 <div className='pt-5'>
                     <Link href="#about">
-                        <a ><button className='heroButton'>About</button></a>
+                        <a ><button className='heroButton'>Acerca De</button></a>
                     </Link>
 
                     <Link href="#skills">
@@ -39,10 +39,10 @@ export default function Hero({ pageInfo}: Props) {
                     </Link>
 
                     <Link href="#experience">
-                        <a ><button className='heroButton'>Experience</button></a>
+                        <a ><button className='heroButton'>Experiencia</button></a>
                     </Link>
                     <Link href="#projects">
-                        <a ><button className='heroButton'>Projects</button></a>
+                        <a ><button className='heroButton'>Projectos</button></a>
                     </Link>
                 </div>
             </div>

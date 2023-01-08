@@ -21,12 +21,13 @@ export default function ExperienceCard({ experience}: Props) {
                 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className='w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center'
+
+                className='w-32 h-32 rounded-full xl:w-[300px] xl:h-[200px] object-scale-down object-center'
                 src={urlFor(experience.companyImage).url()} alt="" />
 
             <div className='px-0 md:px-10'>
 
-                <h4 className='text-4xl font-light'>{experience.company}</h4>
+                <h4 className='text-2xl font-light'>{experience.company}</h4>
                 <p className='font-bold text-2xl mt-1'>{experience.jobTitle}</p>
 
                 <div className='flex space-x-2 my-2'>

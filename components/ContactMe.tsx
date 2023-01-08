@@ -19,14 +19,14 @@ export default function ContactMe({ }: Props) {
   return (
     <div className='h-screen relative flex flex-col overflow-hidden  text-center md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center z-0'>
 
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+      <h3 className='absolute top-10 uppercase tracking-[20px] text-gray-500 text-2xl'>
         Contacto</h3>
 
 
       <div className='flex flex-col space-y-10 '>
         <h4 className='text-4xl font-semibold text-center'>
-          ¿Soluciones? Te las tengo. {" "}
-          <span className='decoration-[#F7AB0A]/50 underline'>Hablemos</span>
+          Contactame y {" "}
+          <span className='decoration-[#F7AB0A]/50 underline'>Charlemos</span>
         </h4>
 
 
@@ -59,13 +59,7 @@ export default function ContactMe({ }: Props) {
         </form>
 
       </div>
-      <Link href="#hero">
-      <footer className='sticky bottom-5 w-full cursor-pointer '>
-        <div className='flex  items-center justify-center'>
-          <img className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0' src="https://career.proxify.io/_nuxt/img/1ededc4.webp" alt="" />
-        </div>
-      </footer>
-      </Link>
+   
     </div>
   )
 }

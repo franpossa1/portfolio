@@ -5,7 +5,7 @@ import { Skill, Social } from "../../typings";
 
 
 const query = groq`
-*[type == 'skill']
+*[_type == 'skill']
 `
 type Data = {
     skills: Skill[]
